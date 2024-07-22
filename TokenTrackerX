@@ -1,0 +1,26 @@
+# TokenTrackerX.py
+
+class TokenTrackerX:
+    def __init__(self, platform_name, tracking_features):
+        self.platform_name = platform_name
+        self.tracking_features = tracking_features
+    
+    def display_platform_info(self):
+        print(f"Platform Name: {self.platform_name}")
+        print("Tracking Features:")
+        for feature in self.tracking_features:
+            print(f"- {feature}")
+
+# Example usage
+if __name__ == "__main__":
+    platform_name = "TokenTrackerX"
+    tracking_features = [
+        "Real-time token price tracking",
+        "Token transaction monitoring",
+        "Portfolio management for tokens",
+        "Token analytics and insights",
+        "Alerts and notifications for token movements"
+    ]
+    
+    token_tracker = TokenTrackerX(platform_name, tracking_features)
+    token_tracker.display_platform_info()
